@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caçador de Monstros 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud">
+    <div class="hud-card">
+      <span>VIDA</span>
+      <div class="bar"><div id="healthBar"></div></div>
+      <strong id="health">100</strong>
+    </div>
+    <div class="hud-card">
+      <span>MUNIÇÃO</span>
+      <strong id="ammo">12 / 60</strong>
+    </div>
+    <div class="hud-card">
+      <span>MONSTROS</span>
+      <strong id="kills">0</strong>
+    </div>
+    <div class="hud-card">
+      <span>FASE</span>
+      <strong id="level">1</strong>
+    </div>
+  </div>
+
+  <div id="crosshair">+</div>
+
+  <div id="message"></div>
+
+  <section id="overlay">
+    <div class="panel">
+      <p class="eyebrow">SOBREVIVA À ESCURIDÃO</p>
+      <h1>CAÇADOR DE<br><span>MONSTROS 3D</span></h1>
+      <p id="description">
+        Explore a floresta, enfrente criaturas e sobreviva
+        a ondas cada vez mais perigosas.
+      </p>
+      <div class="controls">
+        <p><b>W A S D</b> — Mover</p>
+        <p><b>MOUSE</b> — Olhar ao redor</p>
+        <p><b>CLIQUE ESQUERDO</b> — Atirar</p>
+        <p><b>R</b> — Recarregar</p>
+        <p><b>ESC</b> — Liberar o mouse</p>
+      </div>
+      <button id="startButton">INICIAR CAÇADA</button>
+      <p id="status">Preparando o equipamento...</p>
+    </div>
+  </section>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
+
+    <div id="hitFlash"></div>
+    <div id="damageFlash"></div>
+    <div id="bottomHint">WASD: MOVER &nbsp; • &nbsp; MOUSE: MIRAR &nbsp; • &nbsp; CLIQUE: ATIRAR</div>
+  </div>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
